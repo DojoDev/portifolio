@@ -1,0 +1,19 @@
+{
+  "name": "raffaelnunes.com.br",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
