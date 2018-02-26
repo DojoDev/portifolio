@@ -5,12 +5,93 @@
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+@import url(https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css);
+
 /*General Styles */
 
 * {
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
+}
+
+/* Menu */
+
+.custom-wrapper {
+background-color: #000;
+margin-bottom: 1em;
+-webkit-font-smoothing: antialiased;
+height: 2.1em;
+overflow: hidden;
+-webkit-transition: height 0.5s;
+-moz-transition: height 0.5s;
+-ms-transition: height 0.5s;
+transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+height: 14em;
+}
+
+.custom-menu-3 {
+text-align: right;
+}
+
+.custom-toggle {
+width: 34px;
+height: 34px;
+position: absolute;
+top: 0;
+right: 0;
+display: none;
+}
+
+.custom-toggle .bar {
+background-color: #777;
+display: block;
+width: 20px;
+height: 2px;
+border-radius: 100px;
+position: absolute;
+top: 18px;
+right: 7px;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-ms-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+-webkit-transform: translateY(-6px);
+-moz-transform: translateY(-6px);
+-ms-transform: translateY(-6px);
+transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+.custom-menu-3 {
+text-align: left;
+}
+
+.custom-toggle {
+display: block;
+}
+
 }
 
 .foto-me{
@@ -120,13 +201,14 @@ section p {
 header {
 	position: absolute;
 	width: 100%;
-	display: flex;
+	display: block;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 	padding: 35px 100px 0;
 	animation: 1s fadein 0.5s forwards;
 	opacity: 0;
 	color: #fff;
+	z-index:+1000px;
 }
 
 @keyframes fadein {
@@ -168,6 +250,7 @@ header nav li {
 	text-align: center;
 	min-height: 100vh;
 	color: #fff;
+	z-index:-1000;
 }
 
 .hero .background-image {
