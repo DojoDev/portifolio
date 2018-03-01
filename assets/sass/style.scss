@@ -95,8 +95,62 @@ li.pure-menu-item a:hover{
   color:green;
   
 }
+/* Gallery */
+li.item i {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #000000;
+  width: 65px;
+  height: 65px;
+  line-height: 60px;
+  padding-left:-15px;
+  background-color: #ffffff;
+}
 
-/* CLick ME */
+li.item a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+
+li.item.red {
+  background-color: #16a085;
+}
+
+
+li.item.red i {
+  color: #16a085;
+}
+
+li.item.red:hover{
+  opacity: 0.3;
+  filter: grayscale(100%);
+  background-color: #000;
+}
+
+li.item * {
+  transition: all .35s ease-in-out;
+}
+
+li.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+li.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* End Gallery */
+
+/* Click ME */
 
 
 @media (max-width: 47.999em) {
