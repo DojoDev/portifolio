@@ -4,38 +4,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Raffael Nunes - Desenvolvedor Fullstack Recife, Criação de Aplicativos em Recife, Back-End, Front-End, UX/UI.</title>
-
   <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h2><a href="#">/RaffaelNunes</a></h2>
-    <nav>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Portfólio</a></li>
-      <li><a href="#">Contato</a></li>
-    </nav>
+    <div class="custom-wrapper pure-g" id="menu">
+              <div class="pure-u-1 pure-u-md-1-3">
+                      <h1><a href="#" class="pure-menu-heading custom-brand">< RaffaelNunes/></a></h1>
+                      <a href="#" class="custom-toggle" id="toggle">
+                      <s class="bar"></s>
+                      <s class="bar"></s>
+                      </a>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                  <div class="pure-menu pure-menu-horizontal custom-can-transform">
+                      <ul class="pure-menu-list">
+                          <li class="pure-menu-item"><a href="#home" class="pure-menu-link">Home</a></li>
+                          <li class="pure-menu-item"><a href="#about" class="pure-menu-link">Sobre</a></li>
+                          <li class="pure-menu-item"><a href="#portfolio" class="pure-menu-link">Portfólio</a>
+                          </li>
+                           <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contato</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- <div class="pure-u-1 pure-u-md-1-3">
+                  <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
+                      <ul class="pure-menu-list">
+                          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Yahoo</a></li>
+                          <li class="pure-menu-item"><a href="#" class="pure-menu-link">W3C</a></li>
+                      </ul>
+                  </div>
+              </div> -->
+          </div>
   </header>
   <section class="hero">
     <div class="background-image"></div>
     <div class="hero-content-area">
       <h1>DESENVOLVEDOR FULL STACK</h1>
       <h3>Olá, me chamo Raffael Nunes, <br>Desenvolvedor Full Stack Web/Mobile</h3>
-      <a href="#" class="btn">Hey Ho Let's Go! <i class="fa fa-hand-spock fa-2x"></i></a>
+      <a href="#" class="btn click-me">Hey Ho Let's Go! <i class="fa fa-hand-spock fa-2x"></i></a>
     </div>
   </section>
 <section class="packages">
     <h3 class="title">Sobre Mim</h3>
     <item class="foto-me"></item>
-       <ul>
-      <li class="social-icon"><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-      <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
+       <ul class="social-icon-container">
+      <li class="social-icon">
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+      </li>
+      <li class="social-icon"><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+      <li class="social-icon"><a href="#"><i class="fa fa-github-square fa-2x"></i></a></li>
     </ul>
     <br>
     <hr>
-    <p class="destinations-text">Eu sou desenvolvedor web e analista de SEO, fui responsável pelo hanckeamento e posicionamento de sites nas buscas orgânicas e deenvolviemnto de sistemas e Apps.
+    <p class="destinations-text">Eu sou desenvolvedor Web e Mobile onsável pelo hanckeamento e posicionamento de sites nas buscas orgânicas e desenvolviemnto de sistemas e Apps.
     Atuo há mais de 10 anos em desenvolvimento web, aplicativos mobile, Marketing Digital com venda de Info-Produtos, SEO/SEM para agência e empresas de pequeno porte.Atualmente meu foco está voltado em tecnologias e ferramentas mais relevantes para a minha área de atuação, API, integrações para aplicações Web e Mobile.
     <p>
   </section>
@@ -115,5 +138,6 @@
       <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
     </ul>
   </footer>
+<script src="assets/js/menu.js"></script>
 </body>
 </html>
